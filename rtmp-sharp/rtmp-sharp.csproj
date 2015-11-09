@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RtmpSharp</RootNamespace>
     <AssemblyName>rtmp-sharp</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>rtmp-sharp.snk</AssemblyOriginatorKeyFile>
@@ -123,12 +123,19 @@
     <Compile Include="Messaging\InvocationException.cs" />
     <Compile Include="Messaging\MessageReceivedEventArgs.cs" />
     <Compile Include="Messaging\Messages\AcknowledgeMessage.cs" />
+    <Compile Include="Messaging\Messages\AcknowledgeMessageExt.cs" />
+    <Compile Include="Messaging\Messages\AmfMessageUtils.cs" />
     <Compile Include="Messaging\Messages\AsyncMessage.cs" />
     <Compile Include="Messaging\Messages\CommandMessage.cs" />
     <Compile Include="Messaging\Messages\ErrorMessage.cs" />
     <Compile Include="Messaging\Messages\FlexMessage.cs" />
     <Compile Include="Messaging\Messages\RemotingMessage.cs" />
     <Compile Include="Messaging\RtmpEvent.cs" />
+    <Compile Include="Net\AmfPacket.cs" />
+    <Compile Include="Net\AmfPacketBody.cs" />
+    <Compile Include="Net\AmfPacketDeserializer.cs" />
+    <Compile Include="Net\AmfPacketHeader.cs" />
+    <Compile Include="Net\AmfPacketSerializer.cs" />
     <Compile Include="Net\ChunkMessageHeaderType.cs" />
     <Compile Include="Net\ClientDisconnectedException.cs" />
     <Compile Include="Net\EventReceivedEventArgs.cs" />

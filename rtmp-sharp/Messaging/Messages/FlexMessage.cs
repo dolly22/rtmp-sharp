@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace RtmpSharp.Messaging.Messages
 {
-    class FlexMessage
+    public class FlexMessage
     {
         [SerializedName("clientId")]
         public string ClientId { get; set; }

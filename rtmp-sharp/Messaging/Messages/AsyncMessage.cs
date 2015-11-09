@@ -6,7 +6,7 @@ namespace RtmpSharp.Messaging.Messages
     [Serializable]
     [SerializedName("DSA", Canonical = false)]
     [SerializedName("flex.messaging.messages.AsyncMessage")]
-    class AsyncMessage : FlexMessage
+    public class AsyncMessage : FlexMessage
     {
         [SerializedName("correlationId")]
         public string CorrelationId { get; set; }

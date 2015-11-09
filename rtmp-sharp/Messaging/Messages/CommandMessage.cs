@@ -3,7 +3,7 @@ using System;
 
 namespace RtmpSharp.Messaging.Messages
 {
-    enum CommandOperation : int
+    public enum CommandOperation : int
     {
         Subscribe = 0,
         Unsubscribe = 1,
@@ -23,7 +23,7 @@ namespace RtmpSharp.Messaging.Messages
     [Serializable]
     [SerializedName("DSC", Canonical = false)]
     [SerializedName("flex.messaging.messages.CommandMessage")]
-    class CommandMessage : AsyncMessage
+    public class CommandMessage : AsyncMessage
     {
         [SerializedName("messageRefType")]
         public string MessageRefType { get; set; }
